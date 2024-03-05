@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p{text-align:center;}
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .toggle-form {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .toggle-form button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <a href="javascript:window. history. back();">Back</a>
+        <h2>Sign Up</h2>
+        <p>Only universities can upload the projects</p1>
+        <form id="signup-form">
+            <div class="form-group">
+                <label for="email-or-number">Email/Number</label>
+                <input type="text" id="email-or-number" name="email-or-number" required>
+            </div>
+            <div class="form-group">
+                <label for="college-id">College ID</label>
+                <input type="text" id="college-id" name="college-id" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Sign Up">
+            </div>
+
+        </form>
+        <div class="toggle-form">
+            <button onclick="toggleForm()">login</button>
+        </div>
+    </div>
+    <script>    function toggleForm() {
+        window.location.href = "webpage3.html"; // Change "login.html" to the URL of your login page
+    }
+    openTab('login');</script>
+</body>
+</html>
